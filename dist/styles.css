@@ -178,15 +178,15 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0px 30px 50px 20px rgba(0, 0, 0, 0.4);
 }
 
-@media (max-width: 499px) {
+@media (max-width: 500px) {
   .section {
-      padding: 50px 20px 50px 20px;
+      padding: 50px 30px 50px 30px;
     }
 }
 
-@media (min-width: 500px) and (max-width: 700px) {
+@media (min-width: 501px) and (max-width: 700px) {
   .section {
-    padding: 50px 50px 50px 50px;
+    padding: 50px 60px 50px 60px;
   }
     .top-section .text-container .title{
 
