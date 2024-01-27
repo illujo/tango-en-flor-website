@@ -1,0 +1,304 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: transparent;
+  margin: 0px;
+  font-family: "Playfair Display", serif;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #e86c83;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.2s;
+  z-index: 999;
+}
+
+.scroll-header {
+  transition: all 0.2s;
+  background-color: #ffebd8 !important;
+  box-shadow: 0px 0px 44px -15px rgba(0, 0, 0, 0.75);
+  height: 60px;
+  transition: all 0.2s;
+}
+
+.scroll-header .logo {
+  position: relative;
+  top: 25px;
+  transition: all 0.2s;
+}
+
+.scroll-header a {
+  color: black !important;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.logo {
+  height: auto;
+  width: 80px;
+  position: relative;
+  top: 0px;
+  transition: all 0.2s;
+}
+
+.link-container {
+  min-width: 100px;
+  padding: 20px;
+  align-self: center;
+  font-weight: 500;
+  text-align: center;
+}
+
+.link-container a:hover {
+  text-decoration: underline;
+}
+
+.link-container a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffebd8;
+}
+
+.top-section {
+  width: 100%;
+  height: 90vh;
+  background-color: rgba(165, 42, 42, 0.139);
+  background-image: url(./assets/back.jpg);
+  background-size: cover;
+  background-position: center center;
+  color: #ffebd8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-section .text-container {
+  align-self: center;
+  text-align: center;
+  text-shadow: 0px 0px 15px black;
+}
+
+.top-section .text-container .title {
+  margin-top: 15vh;
+  font-size: 90px;
+}
+
+.top-section .text-container .sub-title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.top-section .text-container .date {
+  font-size: 40px;
+}
+
+.top-section .text-container .location {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+.button {
+  padding: 7px 25px 10px 25px;
+  border-radius: 10px;
+  background-color: #9cb85a;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 22px;
+  transition: all 0.1s;
+  text-shadow: 1px 2px 4px #00000064;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+
+.button:hover {
+  filter: brightness(1.1);
+  transform: scale(1.3);
+  transition: all 0.1s;
+  transform: scale(1.05);
+  text-decoration: underline;
+  transform: scale(1.01);
+  transition: all 0.2s;
+}
+
+.section {
+  padding: 50px 100px 50px 100px;
+  box-shadow: 0px 30px 50px 20px rgba(0, 0, 0, 0.4);
+}
+
+.sub-title {
+  font-size: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.description {
+  font-size: 22px;
+  text-align: center;
+  position: relative;
+  top: -20px;
+  margin-bottom: 20px;
+}
+
+.about {
+  background-color: #ffebd8;
+  color: black;
+}
+
+.djs {
+  background-color: #c5eaff;
+  color: black;
+}
+
+.couples {
+  background-color: #c35d5d;
+  color: white;
+}
+
+.schedule {
+  background-color: #ffebd8;
+}
+
+.register {
+  padding: 50px 100px 50px 100px;
+  background-color: #9cb85a;
+  color: white;
+}
+
+.form-frame {
+  width: 100%;
+  height: 1500px;
+  border: none;
+}
+
+.text {
+  font-size: 24px;
+}
+
+.about .content {
+  display: flex;
+}
+
+.venue-image {
+  width: 100%;
+  height: 400px;
+  background-image: url("./assets/venue2.jfif");
+  background-size: cover;
+  background-position: center center;
+}
+
+.row-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+}
+
+.column {
+  width: auto;
+  height: 100%;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+}
+
+.back-image {
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30px;
+}
+
+.image-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(0, 148, 159, 0) 0%, #c35d5d 100%);
+}
+
+.dj-overlay {
+  color: black;
+  background: linear-gradient(180deg, rgba(0, 148, 159, 0) 0%, rgb(2, 32, 57) 100%);
+  background-color: #c5eaff40;
+    border-radius: 30px;
+}
+
+.overlay-text {
+  position: relative;
+  top: 280px;
+  padding: 30px;
+  font-size: 22px;
+  color: #ffebd8;
+  text-shadow: 1px 1px 10px black;
+}
+
+.dj-overlay-text {
+  color: #c5eaff;
+  text-shadow: none;
+}
+
+.schedule-content {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.schedule-content .day {
+  width: 33.3%;
+}
+
+.day {
+  text-align: center;
+}
+
+.day-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.hours {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.dj {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.event-title {
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+}
