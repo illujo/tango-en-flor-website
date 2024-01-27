@@ -65,6 +65,13 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.2s;
 }
 
+@media (max-width: 500px) {
+  .logo{
+      top: 60px;
+    width: 150px;
+  }
+}
+
 .link-container {
   min-width: 100px;
   padding: 20px;
@@ -72,6 +79,8 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   text-align: center;
 }
+
+
 
 .link-container a:hover {
   text-decoration: underline;
@@ -182,6 +191,10 @@ body::-webkit-scrollbar-thumb {
   .section {
       padding: 50px 30px 50px 30px;
     }
+
+        .link-container {
+          display: none;
+        }
 }
 
 @media (min-width: 501px) and (max-width: 700px) {
