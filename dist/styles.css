@@ -86,6 +86,7 @@ body::-webkit-scrollbar-thumb {
 .top-section {
   width: 100%;
   height: 90vh;
+  min-height: 700px;
   background-color: rgba(165, 42, 42, 0.139);
   background-image: url(./assets/back.jpg);
   background-size: cover;
@@ -104,6 +105,7 @@ body::-webkit-scrollbar-thumb {
 
 .top-section .text-container .title {
   margin-top: 15vh;
+  margin-bottom: 10px;
   font-size: 90px;
 }
 
@@ -119,6 +121,28 @@ body::-webkit-scrollbar-thumb {
 .top-section .text-container .location {
   font-size: 30px;
   margin-bottom: 60px;
+}
+
+@media (max-width: 500px) {
+  .top-section .text-container .title {
+    font-size: 65px;
+  }
+  
+  .top-section .text-container .sub-title {
+    font-size: 35px;
+  }
+  
+  .top-section .text-container .date {
+    font-size: 28px;
+  }
+  
+  .top-section .text-container .location {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+  
 }
 
 .button-container {
@@ -154,6 +178,22 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0px 30px 50px 20px rgba(0, 0, 0, 0.4);
 }
 
+@media (max-width: 499px) {
+  .section {
+      padding: 50px 10px 50px 10px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+  .section {
+    padding: 50px 50px 50px 50px;
+  }
+    .top-section .text-container .title{
+
+    }
+}
+
+
 .sub-title {
   font-size: 50px;
   margin-bottom: 50px;
@@ -170,12 +210,12 @@ body::-webkit-scrollbar-thumb {
 
 .about {
   background-color: #ffebd8;
-  color: black;
+  color: #616858;
 }
 
 .djs {
   background-color: #c5eaff;
-  color: black;
+  color: #093a5d;
 }
 
 .couples {
@@ -185,6 +225,7 @@ body::-webkit-scrollbar-thumb {
 
 .schedule {
   background-color: #ffebd8;
+  color: #616858;
 }
 
 .register {
@@ -227,9 +268,10 @@ body::-webkit-scrollbar-thumb {
 .column {
   width: auto;
   height: 100%;
-  width: 30%;
+  min-width: 300px;
+  max-width: 400px;
   background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 .back-image {
@@ -243,14 +285,22 @@ body::-webkit-scrollbar-thumb {
 .image-overlay {
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(0, 148, 159, 0) 0%, #c35d5d 100%);
+  background: linear-gradient(180deg,
+        rgba(0, 148, 159, 0) 0%,
+        rgb(53, 14, 18) 100%);
+          background-color: #ffc5db40;
+          border-radius: 30px;
 }
 
 .dj-overlay {
   color: black;
-  background: linear-gradient(180deg, rgba(0, 148, 159, 0) 0%, rgb(2, 32, 57) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 148, 159, 0) 0%,
+    rgb(2, 32, 57) 100%
+  );
   background-color: #c5eaff40;
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 .overlay-text {
@@ -258,7 +308,7 @@ body::-webkit-scrollbar-thumb {
   top: 280px;
   padding: 30px;
   font-size: 22px;
-  color: #ffebd8;
+  color: white;
   text-shadow: 1px 1px 10px black;
 }
 
@@ -270,11 +320,12 @@ body::-webkit-scrollbar-thumb {
 .schedule-content {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   width: 100%;
 }
 
 .schedule-content .day {
-  width: 33.3%;
+  width: 300px;
 }
 
 .day {
@@ -287,8 +338,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hours {
-  font-size: 30px;
+  font-size: 38px;
   margin-bottom: 10px;
+  color:#5a8d18;
 }
 
 .dj {
