@@ -90,7 +90,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
 .link-container a:hover {
   text-decoration: underline;
 }
@@ -101,9 +100,37 @@ body::-webkit-scrollbar-thumb {
   color: #ffebd8;
 }
 
+.mobile-menu-container {
+  width: 100vw;
+  height: 0px;
+  overflow: visible;
+  z-index: 1000;
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 100px;
+  background-color: #ffebd8 !important;
+  z-index: 1001;
+  padding: 100px;
+}
+
+.mobile-menu .link  {
+  margin-top: 20px;
+}
+
+.mobile-menu .link a{
+  color:#616858;
+  font-size: 32px;
+}
+
 .top-section {
   width: 100%;
   height: 90vh;
+  z-index: 1;
   min-height: 700px;
   background-color: rgba(165, 42, 42, 0.139);
   background-image: url(./assets/back.jpg);
@@ -383,6 +410,28 @@ body::-webkit-scrollbar-thumb {
   .logo {
     top: 60px;
     width: 150px;
+  }
+
+  .link-container {
+    display: none;
+  }
+
+  .menu-container {
+    display: block;
+  }
+
+  .scroll-header .logo {
+    position: relative;
+    top: 25px;
+    width: 80px;
+  }
+
+}
+
+@media (max-width: 950px) {
+
+  .header {
+    justify-content: space-between;
   }
 
   .link-container {
