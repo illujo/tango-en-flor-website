@@ -76,7 +76,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu-container{
-  display: none;
+  display: block;
   padding: 19px;
   margin-right:10px;
   font-weight: 500;
@@ -112,19 +112,28 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  padding-top: 100px;
+  padding-top: 0px;
   background-color: #ffebd8 !important;
   z-index: 1001;
-  padding: 100px;
+  padding: 50px;
+}
+
+.mobile-menu-open{
+  display: block !important;
 }
 
 .mobile-menu .link  {
-  margin-top: 20px;
+  margin: 10px 0px 20px 50px;
 }
 
 .mobile-menu .link a{
   color:#616858;
   font-size: 32px;
+}
+
+.menu-logo{
+  width: 200px;
+  height: auto;
 }
 
 .top-section {
@@ -279,6 +288,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .register {
+  padding-left: 20px;
+  padding-left: 20px;
   background-color: #9cb85a;
   color: white;
 }
@@ -303,6 +314,13 @@ body::-webkit-scrollbar-thumb {
   background-image: url("./assets/venue2.jpg");
   background-size: cover;
   background-position: center center;
+}
+
+.hrc-logo{
+  width: 100px;
+  height: auto;
+  padding: 30px;
+  opacity: 0.5;
 }
 
 .row-container {
