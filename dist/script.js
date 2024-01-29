@@ -15,9 +15,9 @@ function handleScroll() {
 function menuClicked() {
   console.log("clicked");
   var element = document.getElementById("mobile-menu");
-  if (!element.classList.includes("mobile-menu-open")) {
-    element.classList.add("scroll-header");
+  if (!element.classList.contains("mobile-menu-open")) {
+    element.classList.add("mobile-menu-open");
   } else {
-    element.classList.remove("scroll-header");
+    element.classList.remove("mobile-menu-open");
   }
 }
