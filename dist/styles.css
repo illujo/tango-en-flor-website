@@ -273,6 +273,11 @@ body::-webkit-scrollbar-thumb {
   color: #616858;
 }
 
+.afterparty {
+  background-color: #c35d5d;
+  color: white;
+}
+
 .register {
   background-color: #9cb85a;
   color: white;
