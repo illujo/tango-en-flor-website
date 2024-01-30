@@ -160,7 +160,7 @@ body::-webkit-scrollbar-thumb {
   .logo {
     top: 60px;
     width: 150px;
-    left: calc(50vw - 100px);
+    left: calc(50vw - 95px);
   }
 
   .scroll-header .logo{
