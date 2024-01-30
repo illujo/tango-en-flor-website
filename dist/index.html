@@ -37,18 +37,20 @@
             <a href="#schedule">Schedule</a>
         </div>
         <div class="link-container">
-            <a href="#register">Afterparty</a>
+            <a href="#afterparty">Afterparty</a>
         </div>
         <div class="link-container">
-            <a href="#register">Register</a>
+            <a target=”_blank”
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeEtoip-anIXSP4qlWNj-EvKYLUCn-z86aSMjUJ1zG0AHRjcg/viewform?usp=sf_link">Register</a>
         </div>
 
         <div class="menu-container" onclick="menuClicked()">
             <a href="#menu">menu</a>
         </div>
     </div>
-    <div id="mobile-menu" class="mobile-menu-container">
-        <div class="mobile-menu">
+    <div class="mobile-menu-container">
+        <div id="mobile-menu" class="mobile-menu" onclick="menuClicked()">
+            <img class="menu-logo" src="./assets/logo.svg">
             <div class="link">
                 <a href="#venue">Venue</a>
             </div>
@@ -62,10 +64,11 @@
                 <a href="#schedule">Schedule</a>
             </div>
             <div class="link">
-                <a href="#register">Afterparty</a>
+                <a href="#afterparty">Afterparty</a>
             </div>
             <div class="link">
-                <a href="#register">Register</a>
+                <a target=”_blank”
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeEtoip-anIXSP4qlWNj-EvKYLUCn-z86aSMjUJ1zG0AHRjcg/viewform?usp=sf_link">Register</a>
             </div>
         </div>
     </div>
@@ -78,13 +81,14 @@
                 <div class="location">Podgorica, Montenegro</div>
             </div>
             <div class="button-container">
-                <a class="button" href="#register">Register</a>
+                <a class="button" target=”_blank”
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeEtoip-anIXSP4qlWNj-EvKYLUCn-z86aSMjUJ1zG0AHRjcg/viewform?usp=sf_link">Register</a>
             </div>
         </div>
         <div id="venue" class="section about">
             <div class="sub-title">Venue</div>
             <div class="text">
-                HARD ROCK CAFE PODGORICA, renowned for its legendary cuisine, drinks, and an authentic rock
+                HARD ROCK CAFE PODGORICA, renowned for its legendary cuisine, drinks, and authentic rock
                 atmosphere, is located in
                 the heart of the city at Independence Square (Trg Nezavisnosti).
                 <br><br>
@@ -96,6 +100,7 @@
             </div>
         </div>
         <div class="venue-image">
+            <img class="hrc-logo" src="./assets/hrc_logo.svg">
         </div>
         <div></div>
         <div id="teachers" class="section couples">
@@ -106,18 +111,7 @@
             </div>
             <div class="row-container">
                 <div class="column">
-                    <div class="back-image" style="background-image: url('./assets/couple1.jpg');">
-                        <div class="image-overlay">
-                            <div class="overlay-text">
-                                Osky Casas y Magdalena Vračarić
-                                <br>
-                                (Argentina/Croatia)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="back-image" style="background-image: url('./assets/couple1.jpg');">
+                    <div class="back-image" style="background-image: url('./assets/relja_djiki.jpg');">
                         <div class="image-overlay">
                             <div class="overlay-text">
                                 Relja Dereta y Anđela Djiki Ristić
@@ -127,6 +121,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="column">
+                    <div class="back-image" style="background-image: url('./assets/osky_mag.jpg');">
+                        <div class="image-overlay">
+                            <div class="overlay-text">
+                                Osky Casas y Magdalena Vračarić
+                                <br>
+                                (Argentina/Croatia)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="column">
                     <div class="back-image" style="background-image: url('./assets/couple1.jpg');">
                         <div class="image-overlay">
@@ -213,11 +219,21 @@
                     <div class="day-title">Friday</div>
                     <div class="hours">21:00-2:00</div>
                     <div class="event-title">EVENING MILONGA</div>
-                    <div class="dj">DJ Osky & <i>Performance Relja y Djiki</i></div>
+                    <div class="dj">DJ Osky<br>&<br><i>Performance by Relja y Djiki</i></div>
                     <div>----------</div>
                 </div>
                 <div class="day">
                     <div class="day-title">Saturday</div>
+                    <div class="hours">12:00-13:30</div>
+                    <div class="event-title">Workshop 1</div>
+                    <div class="dj">Osky y Magdalena</div>
+                    <div>----------</div>
+                    <br>
+                    <div class="hours">13:45-15:15</div>
+                    <div class="event-title">Workshop 2</div>
+                    <div class="dj">Osky y Magdalena</div>
+                    <div>----------</div>
+                    <br>
                     <div class="hours">15:30-19:00</div>
                     <div class="event-title">DAILY MILONGA</div>
                     <div class="dj">DJ Djiki</div>
@@ -226,17 +242,50 @@
 
                     <div class="hours">21:00-2:00</div>
                     <div class="event-title" event-title">EVENING MILONGA</div>
-                    <div class="dj">DJ Davor & <i>Perfarmance Osky y Magdalena</i></div>
+                    <div class="dj">DJ Davor<br>&<br><i>Performance by Osky y Magdalena</i></div>
                     <div>----------</div>
                 </div>
                 <div class="day">
                     <div class="day-title">Sunday</div>
-                    <div class="hours">17:30-00:00</div>
+                    <div class="hours">13:00-14:30</div>
+                    <div class="event-title">Workshop 3</div>
+                    <div class="dj">Relja y Djiki</div>
+                    <div>----------</div>
+                    <br>
+                    <div class="hours">14:45-16:15</div>
+                    <div class="event-title">Workshop 4</div>
+                    <div class="dj">Relja y Djiki</div>
+                    <div>----------</div>
+                    <br>
+                    <div class="hours">16:30-00:00</div>
                     <div class="event-title">ALL-DAY MILONGA</div>
-                    <div class="dj">DJ Luka</div>
+                    <div class="dj">DJ Luka<br>&<br><i>Performance by Emir y Andrea</i></div>
                     <div>----------</div>
                 </div>
             </div>
+        </div>
+        <div id="afterparty" class="section afterparty">
+            <div class="sub-title">Afterparty<sub style="font-size: 22px;">
+                    <div><i>by Buenavista</i></div>
+                </sub></div>
+            <br>
+            <br>
+            <div class="description" style="margin-bottom: 20px;">The dancing won't stop after the weekend. Join us for
+                the AFTERPARTY BY BUENAVISTA
+                on Monday evening at Ethno Jazz Club
+                Sejdefa. Entrance fee is charged separately
+
+            </div>
+            <div class="schedule-content">
+                <div class="day">
+                    <div class="day-title" style="color: white">Monday</div>
+                    <div class="hours" style="color: white"> 21:00-1:00</div>
+                    <div class="event-title">MILONGA DEL CIELO</div>
+                    <div class="dj">DJ Boban Šćepanović</i></div>
+                    <div>----------</div>
+                </div>
+            </div>
+
         </div>
         <div id="register" class="section register">
             <div class="sub-title">Register</div>
