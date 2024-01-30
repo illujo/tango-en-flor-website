@@ -82,6 +82,13 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   text-align: center;
   border-radius: 20px;
+  color: #ffebd8;
+}
+
+.menu-container a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #ffebd8;
 }
 
 .menu-container:active{
@@ -111,23 +118,38 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   width: 100vw;
   height: 100vh;
-  padding-top: 0px;
   background-color: #ffebd8 !important;
   z-index: 1001;
-  padding: 50px;
 }
 
 .mobile-menu-open{
-  display: block !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mobile-menu .link  {
-  margin: 10px 0px 20px 50px;
+  text-align: center;
+  margin: 15px;
 }
 
 .mobile-menu .link a{
   color:#616858;
-  font-size: 32px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.menu-logo {
+  width: 150px;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.close-btn{
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 @media (max-width: 500px) {
@@ -138,6 +160,11 @@ body::-webkit-scrollbar-thumb {
   .logo {
     top: 60px;
     width: 150px;
+    left: calc(50vw - 100px);
+  }
+
+  .scroll-header .logo{
+    left: 0px !important;
   }
 
   .link-container {
@@ -178,10 +205,7 @@ body::-webkit-scrollbar-thumb {
 
 }
 
-.menu-logo{
-  width: 200px;
-  height: auto;
-}
+
 
 .top-section {
   width: 100%;
@@ -220,8 +244,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .top-section .text-container .location {
-  font-size: 30px;
-  margin-bottom: 60px;
+  font-size: 28px;
+    margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 500px) {
@@ -399,8 +424,9 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(180deg,
         rgba(0, 148, 159, 0) 0%,
         rgb(53, 14, 18) 100%);
-          background-color: #ffc5db40;
-          border-radius: 30px;
+  background-color: #ffc5db40;
+  border-radius: 30px;
+  box-shadow: 0px 21px 37px -18px rgb(95, 8, 8);
 }
 
 .dj-overlay {
@@ -412,6 +438,7 @@ body::-webkit-scrollbar-thumb {
   );
   background-color: #c5eaff40;
   border-radius: 30px;
+    box-shadow: 0px 21px 37px -18px rgb(7, 32, 91);
 }
 
 .overlay-text {
@@ -424,7 +451,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .dj-overlay-text {
-  color: #c5eaff;
+  color: #dff3ff;
   text-shadow: none;
 }
 
