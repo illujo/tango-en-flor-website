@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .link-container {
-  min-width: 100px;
+  min-width:85px;
   padding: 20px;
   align-self: center;
   font-weight: 500;
