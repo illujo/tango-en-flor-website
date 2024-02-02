@@ -61,7 +61,7 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   width: 80px;
   position: relative;
-  top: 0px;
+  top: 3px;
   transition: all 0.2s;
 }
 
