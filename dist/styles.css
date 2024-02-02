@@ -443,7 +443,7 @@ body::-webkit-scrollbar-thumb {
 
 .overlay-text {
   position: relative;
-  top: 280px;
+  top: 257px;
   padding: 30px;
   font-size: 22px;
   color: white;
@@ -453,6 +453,7 @@ body::-webkit-scrollbar-thumb {
 .dj-overlay-text {
   color: #dff3ff;
   text-shadow: none;
+  top: 285px;
 }
 
 .schedule-content {
