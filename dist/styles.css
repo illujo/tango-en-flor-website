@@ -65,20 +65,18 @@ body::-webkit-scrollbar-thumb {
   transition: all 0.2s;
 }
 
-
-
 .link-container {
-  min-width:85px;
+  min-width: 85px;
   padding: 20px;
   align-self: center;
   font-weight: 500;
   text-align: center;
 }
 
-.menu-container{
+.menu-container {
   display: none;
   padding: 19px;
-  margin-right:10px;
+  margin-right: 10px;
   font-weight: 500;
   text-align: center;
   border-radius: 20px;
@@ -91,10 +89,9 @@ body::-webkit-scrollbar-thumb {
   color: #ffebd8;
 }
 
-.menu-container:active{
+.menu-container:active {
   background-color: #61685842;
 }
-
 
 .link-container a:hover {
   text-decoration: underline;
@@ -122,19 +119,19 @@ body::-webkit-scrollbar-thumb {
   z-index: 1001;
 }
 
-.mobile-menu-open{
+.mobile-menu-open {
   display: flex !important;
   flex-direction: column;
   align-items: center;
 }
 
-.mobile-menu .link  {
+.mobile-menu .link {
   text-align: center;
   margin: 15px;
 }
 
-.mobile-menu .link a{
-  color:#616858;
+.mobile-menu .link a {
+  color: #616858;
   font-size: 30px;
   text-decoration: none;
 }
@@ -146,7 +143,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 15px;
 }
 
-.close-btn{
+.close-btn {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -163,7 +160,7 @@ body::-webkit-scrollbar-thumb {
     left: calc(50vw - 95px);
   }
 
-  .scroll-header .logo{
+  .scroll-header .logo {
     left: 0px !important;
   }
 
@@ -180,11 +177,9 @@ body::-webkit-scrollbar-thumb {
     top: 25px;
     width: 80px;
   }
-
 }
 
 @media (max-width: 950px) {
-
   .header {
     justify-content: space-between;
   }
@@ -202,10 +197,7 @@ body::-webkit-scrollbar-thumb {
     top: 25px;
     width: 80px;
   }
-
 }
-
-
 
 .top-section {
   width: 100%;
@@ -245,7 +237,7 @@ body::-webkit-scrollbar-thumb {
 
 .top-section .text-container .location {
   font-size: 28px;
-    margin-top: 10px;
+  margin-top: 10px;
   margin-bottom: 50px;
 }
 
@@ -253,22 +245,21 @@ body::-webkit-scrollbar-thumb {
   .top-section .text-container .title {
     font-size: 65px;
   }
-  
+
   .top-section .text-container .sub-title {
     font-size: 35px;
   }
-  
+
   .top-section .text-container .date {
     font-size: 28px;
   }
-  
+
   .top-section .text-container .location {
     font-size: 20px;
   }
 }
 
 @media (min-width: 500px) and (max-width: 700px) {
-  
 }
 
 .button-container {
@@ -306,8 +297,8 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 500px) {
   .section {
-      padding: 50px 30px 80px 30px;
-    } 
+    padding: 50px 30px 80px 30px;
+  }
 }
 
 @media (min-width: 501px) and (max-width: 700px) {
@@ -315,7 +306,6 @@ body::-webkit-scrollbar-thumb {
     padding: 50px 60px 80px 60px;
   }
 }
-
 
 .sub-title {
   font-size: 50px;
@@ -385,7 +375,7 @@ body::-webkit-scrollbar-thumb {
   background-position: center center;
 }
 
-.hrc-logo{
+.hrc-logo {
   width: 100px;
   height: auto;
   padding: 30px;
@@ -421,9 +411,11 @@ body::-webkit-scrollbar-thumb {
 .image-overlay {
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg,
-        rgba(0, 148, 159, 0) 0%,
-        rgb(53, 14, 18) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 148, 159, 0) 0%,
+    rgb(53, 14, 18) 100%
+  );
   background-color: #ffc5db40;
   border-radius: 30px;
   box-shadow: 0px 21px 37px -18px rgb(95, 8, 8);
@@ -438,7 +430,7 @@ body::-webkit-scrollbar-thumb {
   );
   background-color: #c5eaff40;
   border-radius: 30px;
-    box-shadow: 0px 21px 37px -18px rgb(7, 32, 91);
+  box-shadow: 0px 21px 37px -18px rgb(7, 32, 91);
 }
 
 .overlay-text {
@@ -480,7 +472,7 @@ body::-webkit-scrollbar-thumb {
 .hours {
   font-size: 38px;
   margin-bottom: 10px;
-  color:#5a8d18;
+  color: #5a8d18;
 }
 
 .dj {
@@ -495,7 +487,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
 }
 
-.buena-vista-logo{
+.buena-vista-logo {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -512,4 +504,9 @@ body::-webkit-scrollbar-thumb {
   display: inline-block;
   width: 150px;
   height: auto;
+}
+
+.scroll-to {
+  position: relative;
+  top: -109px;
 }
