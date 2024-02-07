@@ -212,12 +212,13 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  filter: saturate(80%);
 }
 
 .top-section .text-container {
   align-self: center;
   text-align: center;
-  text-shadow: 0px 0px 15px black;
+  text-shadow: 0px 0px 10px black;
 }
 
 .top-section .text-container .title {
@@ -245,6 +246,9 @@ body::-webkit-scrollbar-thumb {
   .top-section {
     background-image: url(./assets/back2_mobile.jpg);
   }
+  .top-section .text-container {
+    text-shadow: 0px 0px 5px black;
+  }
 
   .top-section .text-container .title {
     font-size: 65px;
@@ -270,7 +274,7 @@ body::-webkit-scrollbar-thumb {
 .button {
   padding: 7px 25px 10px 25px;
   border-radius: 10px;
-  background-color: #9cb85a;
+  background-color: #8caf3c;
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -279,7 +283,7 @@ body::-webkit-scrollbar-thumb {
   text-shadow: 1px 2px 4px #00000064;
   transform: scale(1);
   transition: all 0.2s;
-}
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.411);}
 
 .button:hover {
   filter: brightness(1.1);
