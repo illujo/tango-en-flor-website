@@ -352,15 +352,15 @@ body::-webkit-scrollbar-thumb {
 .schedule {
   background-color: #ffebd8;
   color: #616858;
-    background-image: url(./assets/cvijece-green.png);
-      background-position: bottom;
-      background-repeat: repeat-x;
-      background-size: auto 200px;
 }
 
 .pricing {
-  background-color: #c35d5d;
-  color: white;
+  background-color: #ffebd8;
+    color: #616858;
+    background-image: url(./assets/cvijece-green.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: auto 200px;
 }
 
 .register {
