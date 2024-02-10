@@ -550,6 +550,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 30px;
   margin-bottom: 15px;
   border-radius: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .pricing-row .name{
