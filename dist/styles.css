@@ -334,16 +334,28 @@ body::-webkit-scrollbar-thumb {
 .djs {
   background-color: #c5eaff;
   color: #093a5d;
+  background-image: url(./assets/cvijece-blue.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 800px auto;
 }
 
 .couples {
   background-color: #c35d5d;
   color: white;
+  background-image: url(./assets/cvijece.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: 800px auto;
 }
 
 .schedule {
   background-color: #ffebd8;
   color: #616858;
+    background-image: url(./assets/cvijece-green.png);
+      background-position: bottom;
+      background-repeat: repeat-x;
+      background-size: 800px auto;
 }
 
 .pricing {
@@ -356,6 +368,10 @@ body::-webkit-scrollbar-thumb {
   padding-left: 10px;
   background-color: #9cb85a;
   color: white;
+      background-image: url(./assets/cvijece-green.png);
+        background-position: bottom;
+        background-repeat: repeat-x;
+        background-size: auto 400px;
 }
 
 .form-frame {
