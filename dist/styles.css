@@ -283,7 +283,8 @@ body::-webkit-scrollbar-thumb {
   text-shadow: 1px 2px 4px #00000064;
   transform: scale(1);
   transition: all 0.2s;
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.411);}
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.411);
+}
 
 .button:hover {
   filter: brightness(1.1);
@@ -323,7 +324,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   position: relative;
   top: -20px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 .about {
@@ -349,6 +350,15 @@ body::-webkit-scrollbar-thumb {
   background-size: auto 200px;
 }
 
+.foto {
+  color: #ffebd8;
+  background-color: #7a8867;
+    background-image: url(./assets/cvijece.png);
+      background-position: bottom;
+      background-repeat: repeat-x;
+      background-size: auto 200px;
+}
+
 .schedule {
   background-color: #ffebd8;
   color: #616858;
@@ -356,11 +366,11 @@ body::-webkit-scrollbar-thumb {
 
 .pricing {
   background-color: #ffebd8;
-    color: #616858;
-    background-image: url(./assets/cvijece-green.png);
-    background-position: bottom;
-    background-repeat: repeat-x;
-    background-size: auto 200px;
+  color: #616858;
+  background-image: url(./assets/cvijece-green.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: auto 200px;
 }
 
 .register {
@@ -368,10 +378,10 @@ body::-webkit-scrollbar-thumb {
   padding-left: 10px;
   background-color: #9cb85a;
   color: white;
-      background-image: url(./assets/cvijece-green.png);
-        background-position: bottom;
-        background-repeat: repeat-x;
-        background-size: auto 400px;
+  background-image: url(./assets/cvijece-green.png);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: auto 400px;
 }
 
 .form-frame {
@@ -388,7 +398,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
 }
 
-.tit-logo-container{
+.tit-logo-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -396,13 +406,13 @@ body::-webkit-scrollbar-thumb {
   border-bottom: dashed 1px #61685841;
 }
 
-.event-by{
+.event-by {
   font-size: 30px;
   font-weight: bold;
   margin-right: 30px;
 }
 
-.tit-logo{
+.tit-logo {
   width: 100px;
   height: auto;
   position: relative;
@@ -450,6 +460,17 @@ body::-webkit-scrollbar-thumb {
   border-radius: 30px;
 }
 
+.foto-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg,
+      rgba(0, 148, 159, 0) 0%,
+      rgba(33, 56, 0, 0.892) 100%);
+  background-color: #ffc5db40;
+  border-radius: 30px;
+  box-shadow: 0px 21px 37px -25px rgb(38, 52, 8);
+}
+
 .image-overlay {
   width: 100%;
   height: 100%;
@@ -460,7 +481,7 @@ body::-webkit-scrollbar-thumb {
   );
   background-color: #ffc5db40;
   border-radius: 30px;
-  box-shadow: 0px 21px 37px -18px rgb(95, 8, 8);
+  box-shadow: 0px 21px 37px -25px rgb(95, 8, 8);
 }
 
 .dj-overlay {
@@ -472,7 +493,7 @@ body::-webkit-scrollbar-thumb {
   );
   background-color: #c5eaff40;
   border-radius: 30px;
-  box-shadow: 0px 21px 37px -18px rgb(7, 32, 91);
+  box-shadow: 0px 21px 37px -25px rgb(7, 32, 91);
 }
 
 .overlay-text {
@@ -488,6 +509,14 @@ body::-webkit-scrollbar-thumb {
   color: #dff3ff;
   text-shadow: none;
   top: 285px;
+}
+
+.foto-text{
+  position: relative;
+  top: 287px;
+  padding: 30px;
+  font-size: 22px;
+  color: #ffebd8;;
 }
 
 .schedule-content {
@@ -553,20 +582,20 @@ body::-webkit-scrollbar-thumb {
   top: -109px;
 }
 
-.pricing-container{
+.pricing-container {
   display: flex;
   flex-direction: column;
-  align-items: center
+  align-items: center;
 }
 
-.pricing-title{
+.pricing-title {
   font-size: 30px;
   margin-bottom: 30px;
   margin-top: 60px;
   text-align: center;
 }
 
-.pricing-row{
+.pricing-row {
   display: flex;
   width: 100%;
   max-width: 900px;
@@ -580,7 +609,7 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0px 5px 10px -5px #6168582d;
 }
 
-.pricing-row .name{
+.pricing-row .name {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -591,7 +620,7 @@ body::-webkit-scrollbar-thumb {
   font-style: italic;
 }
 
-.pricing-row .price-desc{
+.pricing-row .price-desc {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -602,7 +631,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
 }
 
-.pricing-row .price{
+.pricing-row .price {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -612,13 +641,13 @@ body::-webkit-scrollbar-thumb {
   font-size: 40px;
 }
 
-.centered-text{
+.centered-text {
   vertical-align: middle;
 }
 
-.highligh-price{
+.highligh-price {
   background-color: #738d52;
-  color:#ffebd8;
+  color: #ffebd8;
   border-color: #ffebd8;
   text-shadow: 0px 0px 5px #616858;
   animation: glowing 1.5s infinite alternate;
@@ -631,7 +660,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 700px) {
-.pricing-row {
+  .pricing-row {
     flex-direction: column;
   }
   .pricing-row .name {
