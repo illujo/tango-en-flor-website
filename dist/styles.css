@@ -555,6 +555,12 @@ body::-webkit-scrollbar-thumb {
 
 .event-title {
   margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.event-description {
+  margin-bottom: 8px;
   font-size: 18px;
   font-weight: 500;
 }
