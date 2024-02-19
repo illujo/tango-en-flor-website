@@ -315,8 +315,10 @@ body::-webkit-scrollbar-thumb {
 
 .sub-title {
   font-size: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  margin-top: 0px;
   text-align: center;
+  font-weight: 400;
 }
 
 .description {
