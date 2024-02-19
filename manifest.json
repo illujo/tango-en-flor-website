@@ -3,8 +3,8 @@
   "short_name": "tango-en-flor",
   "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#fdfdfd",
-  "theme_color": "#db4938",
+  "background_color": "#ffebd8",
+  "theme_color": "#7a8867",
   "orientation": "portrait-primary",
   "icons": [
     {
