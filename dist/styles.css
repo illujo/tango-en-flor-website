@@ -378,7 +378,7 @@ body::-webkit-scrollbar-thumb {
 .register {
   padding-right: 10px;
   padding-left: 10px;
-  background-color: #9cb85a;
+  background-color: #657935;
   color: white;
   background-image: url(./assets/cvijece-green.png);
   background-position: bottom;
@@ -647,7 +647,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .highligh-price {
-  background-color: #738d52;
+  background-color: #617645;
   color: #ffebd8;
   border-color: #ffebd8;
   text-shadow: 0px 0px 5px #616858;
