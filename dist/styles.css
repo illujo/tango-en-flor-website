@@ -562,6 +562,17 @@ body::-webkit-scrollbar-thumb {
   font-size: 20px;
 }
 
+.location-link {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-decoration: underline !important;
+  color: #5a8d18;
+}
+
+.location-linkover:hover {
+  cursor: pointer !important;
+}
+
 .event-title {
   margin-bottom: 8px;
   font-size: 24px;
