@@ -205,7 +205,7 @@ body::-webkit-scrollbar-thumb {
   z-index: 1;
   min-height: 700px;
   background-color: rgba(165, 42, 42, 0.139);
-  background-image: url(./assets/test.png);
+  background-image: url(./assets/back.png);
   background-size: cover;
   background-position: center center;
   color: #ffebd8;
@@ -244,7 +244,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 500px) {
   .top-section {
-    background-image: url(./assets/test.png);
+    background-image: url(./assets/back_mobile.png);
   }
   .top-section .text-container {
     text-shadow: 0px 0px 5px black;
