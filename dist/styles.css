@@ -251,11 +251,12 @@ body::-webkit-scrollbar-thumb {
   }
 
   .top-section .text-container .title {
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .top-section .text-container .sub-title {
     font-size: 35px;
+    margin-bottom: 40px;
   }
 
   .top-section .text-container .date {
