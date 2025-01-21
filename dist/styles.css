@@ -229,7 +229,7 @@ body::-webkit-scrollbar-thumb {
 
 .top-section .text-container .sub-title {
   font-size: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .top-section .text-container .date {
@@ -237,7 +237,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .top-section .text-container .location {
-  font-size: 28px;
+  font-size: 32px;
   margin-top: 10px;
   margin-bottom: 50px;
 }
@@ -246,6 +246,9 @@ body::-webkit-scrollbar-thumb {
   .top-section {
     background-image: url(./assets/back-mobile.jpg);
   }
+        .top-section .text-container .location {
+          font-size: 30px;
+        }
 }
 
 @media (max-width: 500px) {
@@ -261,12 +264,12 @@ body::-webkit-scrollbar-thumb {
   }
 
   .top-section .text-container .sub-title {
-    font-size: 35px;
-    margin-bottom: 40px;
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 
   .top-section .text-container .date {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .top-section .text-container .location {
