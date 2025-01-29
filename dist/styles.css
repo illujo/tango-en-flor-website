@@ -365,6 +365,14 @@ body::-webkit-scrollbar-thumb {
   background-repeat: repeat-x;
   background-size: auto 200px;
 }
+.workshops {
+  background-color: #7a8867;
+  color: white;
+  background-image: url(./assets/cvijece.webp);
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: auto 200px;
+}
 /* 
 .couple .description {s
   max-width: 800px;
@@ -747,4 +755,31 @@ body::-webkit-scrollbar-thumb {
 /* Apply animation to the element */
 .glow {
   animation: glowing 0s infinite alternate-reverse;
+}
+
+.workshop-container {
+  width: 800px;
+  max-height: 45px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  margin-bottom: 20px;
+}
+
+.workshop-container:hover {
+  transition: max-height 1s;
+  max-height: 400px;
+}
+@media (max-width: 500px) {
+  .workshop-container:hover {
+    transition: max-height 0.5s;
+    max-height: 1000px;
+  }
+}
+
+.workshop-title {
+  font-size: 36px;
+}
+
+.workshop-desc {
+  font-size: 22px;
 }
