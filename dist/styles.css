@@ -222,7 +222,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .top-section .text-container .title {
-  margin-top: 45vh;
+  margin-top: 36vh;
   margin-bottom: 0px;
   font-size: 90px;
 }
@@ -248,6 +248,9 @@ body::-webkit-scrollbar-thumb {
   }
   .top-section .text-container .location {
     font-size: 30px;
+  }
+  .top-section .text-container .title {
+    margin-top: 25vh;
   }
 }
 
