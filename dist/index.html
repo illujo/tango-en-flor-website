@@ -40,26 +40,24 @@
 
 <body onscroll="handleScroll()">
     <div id="header" class="header ">
+        <div class="logo-container">
+            <a aria-label="Go to register form" href="#top">
+                <img alt="Tango en Flor logo" class="logo" src="./assets/logo.svg" alt="">
+            </a>
+        </div>
         <!-- <div class="link-container">
             <a aria-label="Go to Venue form" href="#venue">Venue</a>
         </div> -->
         <div class="link-container">
             <a aria-label="Go to Couples form" href="#teachers">Star Couple</a>
         </div>
-
-
-        <div class="logo-container">
-            <a aria-label="Go to register form" href="#top">
-                <img alt="Tango en Flor logo" class="logo" src="./assets/logo.svg" alt="">
-            </a>
+        <div class="link-container">
+            <a aria-label="Go to Workshop" href="#workshops">Workshops</a>
         </div>
         <div class="link-container">
             <a aria-label="Go to DJs form" href="#djs">Mood Makers</a>
         </div>
-        <!-- <div class="link-container">
-            <a aria-label="Jump to Schedule info" href="naski.html">SRB/MNE</a>
-        </div> -->
-        <!-- <div class="link-container">
+        <div class="link-container">
             <a aria-label="Go to Schedule form" href="#schedule">Schedule</a>
         </div>
         <div class="link-container">
@@ -67,9 +65,11 @@
         </div>
         <div class="link-container">
             <a aria-label="Go to register form" target=”_blank”
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdkYTfXxMOlhgIfFsUyRZ9l3Clo5xvDSvdjuw86u7efGrkF0w/viewform?usp=sf_link">Register</a>
-        </div> -->
-
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdkYTfXxMOlhgIfFsUyRZ9l3Clo5xvDSvdjuw86u7efGrkF0w/viewform?usp=sf_link">Registration</a>
+        </div>
+        <div class="link-container" style="margin-left: auto">
+            <a aria-label="Jump to Schedule info" href="naski.html">SRB/MNE</a>
+        </div>
         <div class="menu-container" onclick="menuClicked()">
             <a href="#menu">menu</a>
         </div>
@@ -85,21 +85,24 @@
                 <a aria-label="Jump to Couples info" href="#teachers">Star Couple</a>
             </div>
             <div class="link">
-                <a aria-label="Jump to DJs info" href="#djs">Mood Makers</a>
-            </div>
-            <!-- <div class="link">
-                <a aria-label="Jump to Schedule info" href="naski.html">SRB/MNE</a>
-            </div> -->
-            <!-- <div class="link">
-                <a aria-label="Jump to Schedule info" href="#schedule">Schedule</a>
+                <a aria-label="Go to Workshop" href="#workshops">Workshops</a>
             </div>
             <div class="link">
-                <a aria-label="Jump to Pricing info" href="#pricing">Pricing</a>
+                <a aria-label="Jump to DJs info" href="#djs">Mood Makers</a>
             </div>
+            <div class="link">
+                <a aria-label="Jump to Schedule info" href="naski.html">SRB/MNE</a>
+            </div>
+            <div class="link">
+                <a aria-label="Jump to Schedule info" href="#schedule">Schedule</a>
+            </div>
+            <!-- <div class="link">
+                <a aria-label="Jump to Pricing info" href="#pricing">Pricing</a>
+            </div> -->
             <div class="link">
                 <a aria-label="Go to register form" target=”_blank”
                     href="https://docs.google.com/forms/d/e/1FAIpQLSdkYTfXxMOlhgIfFsUyRZ9l3Clo5xvDSvdjuw86u7efGrkF0w/viewform?usp=sf_link">Register</a>
-            </div> -->
+            </div>
         </div>
     </div>
     <div class="page-content">
@@ -147,33 +150,6 @@
             <h2 class="sub-title">Star couple</h2>
             <div class="couple">
                 <div class="row-container">
-                    <!-- <div class="column">
-                                    <div class="back-image" style="background-image: url('./assets/relja_djiki.webp');">
-                                        <div class="image-overlay">
-                                            <div class="overlay-text">
-                                                Relja Dereta
-                                                <br>
-                                                <span style="font-family: 'Cormorant Garamond', serif;">&</span> Anđela Djiki Ristić
-                                                <br>
-                                                <i>(Serbia)</i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="back-image" style="background-image: url('./assets/osky_mag.webp');">
-                                        <div class="image-overlay">
-                                            <div class="overlay-text">
-                                                Osky Casas
-                                                <br>
-                                                <span style="font-family: 'Cormorant Garamond', serif;">&</span> Magdalena Vračarić
-                                                <br>
-                                                <i>(Argentina/Croatia)</i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
-
                     <div class="column">
                         <div class="back-image" style="background-image: url('./assets/majamarko.jpg');">
                             <div class="image-overlay">
@@ -206,6 +182,115 @@
                     Maja and Marko perform and teach in Podgorica this April!
                 </div>
 
+            </div>
+        </div>
+        <div class="section workshops">
+            <div class="scroll-to" id="workshops"></div>
+            <h2 class="sub-title">Radionice</h2>
+            <div class="workshops">
+                <div class="row-container">
+                    <div class="workshop-container">
+                        <div class="workshop-header">
+                            <div class="workshop-number">1.</div>
+                            <div class="workshop-name">Technique for everybody:<br>Feeling and looking good
+
+                            </div>
+                            <div class="workshop-level"><i>All levels</i></div>
+                            <div class="workshop-action">
+                                <img alt="Buena Vista logo" src="./assets/chevron-down.svg">
+                            </div>
+                        </div>
+                        <div class="workshop-desc">
+                            We'll start from the head and work our way down to the feet discussing
+                            some common problems and their solutions regarding balance, axis,
+                            posture and embrace. The focus will be on finding the balance between
+                            feeling comfortable on the inside and looking beautiful on the outside.
+                            Why choose one when you can have both!
+                            <br>
+                            This lesson is intended for both leaders and followers. The students do
+                            not have to register in couple. Please bring both socks/ soft shoes and
+                            your regular milonga shoes.
+                        </div>
+                    </div>
+                </div>
+                <div class="row-container">
+                    <div class="workshop-container">
+                        <div class="workshop-header">
+                            <div class="workshop-number">2.</div>
+                            <div class="workshop-name">Taking a break: Paradas
+                            </div>
+                            <div class="workshop-level"><i>All levels</i></div>
+                            <div class="workshop-action">
+                                <img alt="Buena Vista logo" src="./assets/chevron-down.svg">
+                            </div>
+                        </div>
+                        <div class="workshop-desc">
+                            Slowing down and making a pause is as important as speeding up and
+                            moving continuously. One of the most beautiful movements to express a
+                            pause is a parada. For a guaranteed customer satisfaction we shall
+                            cover technique, variations, musicality and embellishments in paradas.
+                        </div>
+                    </div>
+                </div>
+                <div class="row-container">
+                    <div class="workshop-container">
+                        <div class="workshop-header">
+                            <div class="workshop-number">3.</div>
+                            <div class="workshop-name">D’Arienzo vs. Di Sarli
+                            </div>
+                            <div class="workshop-level"><i>Mid to advanced level</i></div>
+                            <div class="workshop-action">
+                                <img alt="Buena Vista logo" src="./assets/chevron-down.svg">
+                            </div>
+                        </div>
+                        <div class="workshop-desc">
+                            Here we'll discuss the main technical and musical differences between
+                            dancing to two legendary tango orchestras. One is known for its
+                            rhythmical character, the other for its wonderful melodies. We’ll take
+                            standard tango elements and show you how to adjust them to express
+                            the qualities of these two orchestras.
+                        </div>
+                    </div>
+                </div>
+                <div class="row-container">
+                    <div class="workshop-container">
+                        <div class="workshop-header">
+                            <div class="workshop-number">4.</div>
+                            <div class="workshop-name">Circularity in simple movements
+                            </div>
+                            <div class="workshop-level"><i>All levels</i></div>
+                            <div class="workshop-action">
+                                <img alt="Buena Vista logo" src="./assets/chevron-down.svg">
+                            </div>
+                        </div>
+                        <div class="workshop-desc">
+                            You like how we dance but can’t exactly say why? One of the answers to
+                            that question is in this lesson. Here we'll teach you how to smooth out
+                            the edges on your everyday tango elements and make them soft and
+                            round.
+                        </div>
+                    </div>
+                </div>
+                <div class="row-container">
+                    <div class="workshop-container">
+                        <div class="workshop-header">
+                            <div class="workshop-number">5.</div>
+                            <div class="workshop-name">Milonguero variations
+
+                            </div>
+                            <div class="workshop-level"><i>Mid to advanced level</i></div>
+                            <div class="workshop-action">
+                                <img alt="Buena Vista logo" src="./assets/chevron-down.svg">
+                            </div>
+                        </div>
+                        <div class="workshop-desc">
+                            In this lesson we’ll teach you 2 fun step combinations in close embrace,
+                            perfect for interpreting the more rhythmic and/or energetic part of the
+                            song (e.g. a variation). Both combinations can be easily adapted to any
+                            amount of space which makes them great for (crowded) milongas.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="section djs">
@@ -304,81 +389,56 @@
             </div>
         </div> -->
 
-        <!-- <div class="section schedule">
+        <div class="section schedule">
             <div class="scroll-to" id="schedule"></div>
             <h2 class="sub-title">Schedule</h2>
             <div class="schedule-content">
                 <div class="day">
                     <div class="day-title">Friday</div>
-                    <div class="hours">20:00-00:00</div>
-                    <div class="event-title">MILONGA</div>
-                    <div class="dj">DJ Osky
-                        <br><i>Performance by Relja <span style="font-family: 'Cormorant Garamond', serif;">&</span>
-                            Djiki</i>
-                    </div>
+                    <div class="event-title">Workshop 1.</div>
+                    <div class="event-description">
+                        Technique for everybody 1: Feeling and looking good</div>
+                    <!-- <div class="hours">20:00-00:00</div> -->
                     <div>----------</div>
-                    <div class="hours">00:00-03:00</div>
-                    <div class="event-title" event-title">AFTERPARTY</div>
-                    <div class="dj">DJ Osky
+                    <br>
+                    <div class="event-title">EVENING MILONGA</div>
+                    <div class="dj">DJ Maja Petrović
                     </div>
-                    <div class="dj">at Caffe Club Haustor
-                        <br>
-                        (less than 500m away)
-                    </div>
-                    <a class="location-link"
-                        href="https://www.google.com/maps/place/Club+Haustor/@42.4395518,19.266024,20.93z/data=!4m6!3m5!1s0x134deb4f4f718743:0x72f41bdd22b6507e!8m2!3d42.4395054!4d19.2659261!16s%2Fg%2F11gd39t4l7?hl=en&entry=ttu">
-                        click for location
-                    </a>
                     <br>
                     <br>
-                    <div>----------</div>
                     <br>
                 </div>
                 <div class="day">
                     <div class="day-title">Saturday</div>
-                    <div class="hours">11:00-12:30</div>
-                    <div class="event-title">Workshop</div>
-                    <div class="event-description"><span style="text-decoration: line-through;">Surviving</span> Dancing
-                        the
-                        milonga: exploring the basic steps and the right attitude to truly enjoy the milonga</div>
-                    <div class="dj">
-                        <i>Relja <span style="font-family: 'Cormorant Garamond', serif;">&</span> Djiki</i>
-                    </div>
-                    <div>----------</div>
-                    <div class="hours">12:45-14:15</div>
-                    <div class="event-title">Workshop</div>
-                    <div class="event-description">The perfect tango walk: How to stay grounded and connected with your
-                        partner</div>
-                    <div class="dj">
-                        <i>Osky <span style="font-family: 'Cormorant Garamond', serif;">&</span> Magdalena</i>
-                    </div>
-                    <br>
+                    <!-- <div class="hours">11:00-12:30</div> -->
+
+                    <div class="event-title">Workshop 2.</div>
+                    <div class="event-description">Taking a break: Paradas</div>
+                    <div class="event-title">Workshop 3.</div>
+                    <div class="event-description">D’Arienzo vs. Di Sarli</div>
                     <div>----------</div>
                     <br>
-                    <div class="hours">14:30-18:00</div>
-                    <div class="event-title">DAILY MILONGA</div>
-                    <div class="dj">DJ Djiki</div>
+                    <!-- <div class="hours">14:30-18:00</div> -->
+                    <div class="event-title">AFTERNOON MILONGA</div>
+                    <div class="dj">DJ Toufik Cherifi</div>
                     <div>----------</div>
-                    <div class="hours">20:00-00:00</div>
-                    <div class="event-title" event-title">MILONGA</div>
-                    <div class="dj">DJ Davor
+                    <br>
+                    <div class="event-title" event-title">EVENING MILONGA</div>
+                    <div class="dj">DJ Anđela Djiki Ristić
                     </div>
                     <div class="dj">
-                        <i>Performance by Osky <span style="font-family: 'Cormorant Garamond', serif;">&</span>
-                            Magdalena</i>
+                        <i>Performance:<br> Maja Petrović <span
+                                style="font-family: 'Cormorant Garamond', serif;">&</span> Marko Miljević</i>
                     </div>
                     <div>----------</div>
-                    <div class="hours">00:00-03:00</div>
-                    <div class="event-title" event-title">AFTERPARTY</div>
-                    <div class="dj">DJ Davor
-                    </div>
-                    <div class="dj">at Caffe Club Haustor
-                        <br>
-                        (less than 500m away)
-                    </div>
+                    <br>
+                    <!-- <div class="hours">00:00-03:00</div> -->
+                    <div class="event-title" event-title">NON-TANGO AFTERPARTY</div>
+                    <div class="dj">Caffe Club Haustor </div>
+                    <div class="dj"><i>Free entrance!</i></div>
                     <a class="location-link"
                         href="https://www.google.com/maps/place/Club+Haustor/@42.4395518,19.266024,20.93z/data=!4m6!3m5!1s0x134deb4f4f718743:0x72f41bdd22b6507e!8m2!3d42.4395054!4d19.2659261!16s%2Fg%2F11gd39t4l7?hl=en&entry=ttu">
-                        click for location
+                        get location
                     </a>
                     <br>
                     <br>
@@ -387,35 +447,34 @@
                 </div>
                 <div class="day">
                     <div class="day-title">Sunday</div>
-                    <div class="hours"> 13:00-14:30</div>
-                    <div class="event-title">Workshop</div>
-                    <div class="event-description">Rediscovering musicality: through revisiting basic forms with new
-                        approaches, we will explore ways to enrich your
-                        musicality</div>
-                    <div class="dj"><i>Relja <span style="font-family: 'Cormorant Garamond', serif;">&</span> Djiki</i>
+                    <div class="event-title">Workshop 4.</div>
+                    <div class="event-description">Circularity in simple movements</div>
+                    <div class="event-title">Workshop 5.</div>
+                    <div class="event-description">Milonguero variations
                     </div>
                     <div>----------</div>
-                    <div class="hours">14:45-16:15</div>
-                    <div class="event-title">Workshop</div>
-                    <div class="event-description">Hurricane effect: Use of levels in the circular movement</div>
-                    <div class="dj"><i>Osky <span style="font-family: 'Cormorant Garamond', serif;">&</span>
-                            Magdalena</i>
-                    </div>
                     <br>
-                    <div>----------</div>
-                    <br>
-                    <div class="hours">16:30-23:00</div>
+                    <!-- <div class="hours">16:30-23:00</div> -->
                     <div class="event-title">ALL-DAY MILONGA</div>
-                    <div class="dj">DJ Luka
-                    </div>
-                    <div class="dj">
-                        <i>Performance by Emir <span style="font-family: 'Cormorant Garamond', serif;">&</span>
-                            Andrea</i>
+                    <div class="dj">DJ Luka Radunović
                     </div>
                     <div>----------</div>
+                    <br>
+                    <!-- <div class="hours">00:00-03:00</div> -->
+                    <div class="event-title" event-title">TANGO AFTERPARTY</div>
+                    <div class="dj">Caffe Club Haustor </div>
+                    <div class="dj"><i>Free entrance!</i></div>
+                    <a class="location-link"
+                        href="https://www.google.com/maps/place/Club+Haustor/@42.4395518,19.266024,20.93z/data=!4m6!3m5!1s0x134deb4f4f718743:0x72f41bdd22b6507e!8m2!3d42.4395054!4d19.2659261!16s%2Fg%2F11gd39t4l7?hl=en&entry=ttu">
+                        get location
+                    </a>
+                    <br>
+                    <br>
+                    <div>----------</div>
+                    <br>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- <div class="section couples">
             <div class="scroll-to" id="afterparty"></div>
             <h2 class="sub-title">Afterparty
@@ -442,68 +501,120 @@
             </div>
 
         </div> -->
-        <!-- <div class="section pricing">
+        <div class="section pricing">
             <div class="scroll-to" id="pricing"></div>
             <h2 class="sub-title">Pricing
             </h2>
             <div class="pricing-container">
-                <div class="pricing-title">Full Price</div>
-                <div class="pricing-row">
+                <div class="pricing-title">Super early bloom&#127804;
+                    <br>
+                    <i>(until February 5<sup>th</sup>)</i>
+                </div>
+                <div class="pricing-row highligh-price">
+                    <div class="name">Milonguero pass</div>
+                    <div class="price-desc">All milongas</div>
+                    <div class="price">40€</div>
+                </div>
+                <div class="pricing-row highligh-price">
+                    <div class="name">Full pass</div>
+                    <div class="price-desc">All milongas + All 5 workshops</div>
+                    <div class="price">90€</div>
+                </div>
+                <div class="pricing-title">Early bloom
+                    <br>
+                    <i>(February 6<sup>th</sup> - March 6<sup>th</sup>)</i>
+                </div>
+                <div class="pricing-row semi-highligh-price">
                     <div class="name">Milonguero pass</div>
                     <div class="price-desc">All milongas</div>
                     <div class="price">50€</div>
+                </div>
+                <div class="pricing-row semi-highligh-price">
+                    <div class="name">All Workshops pass</div>
+                    <div class="price-desc">All 5 workshops</div>
+                    <div class="price">70€</div>
+                </div>
+                <!-- <div class="pricing-row semi-highligh-price">
+                    <div class="name">
+                        <div class="centered-text">Tango<span style="font-family: 'Cormorant Garamond', serif;">
+                                &</span> Chill pass</div>
+                    </div>
+                    <div class="price-desc">All milongas<br>+ 3 workshops</div>
+                    <div class="price">80€</div>
+                </div> -->
+                <div class="pricing-row semi-highligh-price" style="margin-bottom: 50px;">
+                    <div class="name">
+                        <div class="centered-text">Full pass</div>
+                    </div>
+                    <div class="price-desc">All milongas<br>+ All 5 workshops</div>
+                    <div class="price">100€</div>
+                </div>
+                <div class="pricing-title">Full Price
+                    <br>
+                    <i>(from March 7<sup>th</sup>)</i>
+                </div>
+                <div class="pricing-row">
+                    <div class="name">Milonguero pass</div>
+                    <div class="price-desc">All milongas</div>
+                    <div class="price">60€</div>
+                </div>
+                <div class="pricing-row">
+                    <div class="name">All Workshops pass</div>
+                    <div class="price-desc">All 5 workshops</div>
+                    <div class="price">70€</div>
                 </div>
                 <div class="pricing-row" style="margin-bottom: 50px;">
                     <div class="name">
                         <div class="centered-text">Full pass</div>
                     </div>
-                    <div class="price-desc">All milongas<br>+ All workshops</div>
-                    <div class="price">100€</div>
+                    <div class="price-desc">All milongas<br>+ All 5 workshops</div>
+                    <div class="price">120€</div>
                 </div>
                 <div class="pricing-row">
                     <div class="name">Individual workshop</div>
                     <div class="price-desc">One workshop</div>
-                    <div class="price">12.5€</div>
+                    <div class="price">20€</div>
                 </div>
+                <div class="pricing-title">At the door</div>
+
+
                 <div class="pricing-row">
                     <div class="name">Friday milonga</div>
                     <div class="price-desc">
                         <span>
-                            DJ Osky<br>Performance by Relja <span
-                                style="font-family: 'Cormorant Garamond', serif;">&</span> Djiki
+                            DJ Maja Petrović
                         </span>
                     </div>
                     <div class="price">20€</div>
                 </div>
                 <div class="pricing-row">
                     <div class="name">Saturday daily milonga</div>
-                    <div class="price-desc">DJ Djiki</div>
+                    <div class="price-desc">DJ Toufik Cherifi</div>
                     <div class="price">10€</div>
                 </div>
                 <div class="pricing-row">
                     <div class="name">Saturday milonga</div>
                     <div class="price-desc">
                         <span>
-                            DJ Davor<br>Performance by Osky <span
-                                style="font-family: 'Cormorant Garamond', serif;">&</span> Magdalena
+                            DJ Djiki<br>Performance by Maja <span
+                                style="font-family: 'Cormorant Garamond', serif;">&</span> Marko
                         </span>
                     </div>
 
-                    <div class="price">20€</div>
+                    <div class="price">25€</div>
                 </div>
                 <div class="pricing-row">
                     <div class="name">Sunday all-day milonga</div>
                     <div class="price-desc">
                         <span>
-                            DJ Luka<br>Performance by Emir <span
-                                style="font-family: 'Cormorant Garamond', serif;">&</span> Andrea
-                        </span>
+                            DJ Luka</span>
                     </div>
                     <div class="price">20€</div>
                 </div>
 
+
             </div>
-        </div> -->
+        </div>
         <div class="section register">
             <div class="scroll-to" id="register"></div>
             <br><br><br><br>

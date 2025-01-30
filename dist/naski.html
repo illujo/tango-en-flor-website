@@ -40,6 +40,11 @@
 
 <body onscroll="handleScroll()">
     <div id="header" class="header ">
+        <div class="logo-container">
+            <a aria-label="Go to register form" href="#top">
+                <img alt="Tango en Flor logo" class="logo" src="./assets/logo.svg" alt="">
+            </a>
+        </div>
         <!-- <div class="link-container">
             <a aria-label="Go to Venue form" href="#venue">Venue</a>
         </div> -->
@@ -49,31 +54,27 @@
             </a>
         </div>
         <div class="link-container">
-            <a aria-label="Go to Workshop" href="#schedule">Radionice</a>
+            <a aria-label="Go to Workshop" href="#workshops">Radionice</a>
         </div>
-        <div class="logo-container">
-            <a aria-label="Go to register form" href="#top">
-                <img alt="Tango en Flor logo" class="logo" src="./assets/logo.svg" alt="">
-            </a>
-        </div>
+
         <div class="link-container">
             <a aria-label="Go to DJs form" href="#djs">DJ-evi</a>
         </div>
         <div class="link-container">
             <a aria-label="Go to Schedule form" href="#schedule">Raspored</a>
         </div>
+
+
         <div class="link-container">
-            <a aria-label="Jump to Schedule info" href="index.html">ENG</a>
-        </div>
-        <!--    
-        <div class="link-container">
-            <a aria-label="Go to Pricing form" href="#pricing">Pricing</a>
+            <a aria-label="Go to Pricing form" href="#pricing">Cijene</a>
         </div>
         <div class="link-container">
             <a aria-label="Go to register form" target=”_blank”
-                href="https://docs.google.com/forms/d/e/1FAIpQLSdkYTfXxMOlhgIfFsUyRZ9l3Clo5xvDSvdjuw86u7efGrkF0w/viewform?usp=sf_link">Register</a>
-        </div> -->
-
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdkYTfXxMOlhgIfFsUyRZ9l3Clo5xvDSvdjuw86u7efGrkF0w/viewform?usp=sf_link">Registracija</a>
+        </div>
+        <div class="link-container" style="margin-left: auto">
+            <a aria-label="Jump to Schedule info" href="index.html">ENG</a>
+        </div>
         <div class="menu-container" onclick="menuClicked()">
             <a href="#menu">menu</a>
         </div>
@@ -164,33 +165,6 @@
                     da učimo od njih!
                 </div>
                 <div class="row-container">
-                    <!-- <div class="column">
-                    <div class="back-image" style="background-image: url('./assets/relja_djiki.webp');">
-                        <div class="image-overlay">
-                            <div class="overlay-text">
-                                Relja Dereta
-                                <br>
-                                <span style="font-family: 'Cormorant Garamond', serif;">&</span> Anđela Djiki Ristić
-                                <br>
-                                <i>(Serbia)</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="back-image" style="background-image: url('./assets/osky_mag.webp');">
-                        <div class="image-overlay">
-                            <div class="overlay-text">
-                                Osky Casas
-                                <br>
-                                <span style="font-family: 'Cormorant Garamond', serif;">&</span> Magdalena Vračarić
-                                <br>
-                                <i>(Argentina/Croatia)</i>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
                     <div class="column">
                         <div class="back-image" style="background-image: url('./assets/majamarko.jpg');">
                             <div class="image-overlay">
@@ -211,11 +185,16 @@
             <div class="scroll-to" id="workshops"></div>
             <h2 class="sub-title">Radionice</h2>
             <div class="workshops">
-
                 <div class="row-container">
                     <div class="workshop-container">
-                        <div class="workshop-title">
-                            1. Tehnika za sve: izgledaj dobro, osjećaj se još bolje
+                        <div class="workshop-header">
+                            <div class="workshop-number">1.</div>
+                            <div class="workshop-name">Tehnika za sve:<br>izgledaj dobro, osjećaj se još bolje
+                            </div>
+                            <div class="workshop-level"><i>Svi nivoi</i></div>
+                            <div class="workshop-action">
+                                <img alt="Buena Vista logo" src="./assets/chevron-down.svg">
+                            </div>
                         </div>
                         <div class="workshop-desc">
                             Počećemo od glave i postepeno se spuštati do stopala, osvrćući se na česte izazove i
@@ -234,8 +213,14 @@
                 </div>
                 <div class="row-container">
                     <div class="workshop-container">
-                        <div class="workshop-title">
-                            2. Napravi pauzu: parade
+                        <div class="workshop-header">
+                            <div class="workshop-number">2.</div>
+                            <div class="workshop-name">Napravi pauzu: parade
+                            </div>
+                            <div class="workshop-level"><i>Svi nivoi</i></div>
+                            <div class="workshop-action">
+                                <img alt="Buena Vista logo" src="./assets/chevron-down.svg">
+                            </div>
                         </div>
                         <div class="workshop-desc">
                             Usporavanje i pravljenje pauza jednako su važni kao i ubrzavanje i neprekidno kretanje.
@@ -248,55 +233,62 @@
                 </div>
                 <div class="row-container">
                     <div class="workshop-container">
-                        <div class="workshop-title">
-                            3. D’Arienzo vs. Di Sarli
+                        <div class="workshop-header">
+                            <div class="workshop-number">3.</div>
+                            <div class="workshop-name">D’Arienzo vs. Di Sarli
+                            </div>
+                            <div class="workshop-level"><i>Srednji i napredni nivo</i></div>
+                            <div class="workshop-action">
+                                <img alt="Buena Vista logo" src="./assets/chevron-down.svg">
+                            </div>
                         </div>
                         <div class="workshop-desc">
-                            Počećemo od glave i postepeno se spuštati do stopala, osvrćući se na česte izazove i načine
-                            kako ih riješiti u vezi sa
-                            ravnotežom, osom, držanjem i zagrljajem. Fokus će biti na pronalaženju balansa između
-                            unutrašnje udobnosti i spoljašnje
-                            elegancije. Zašto x jedno kada možete imati oboje!
-                            <br>
-                            Ova radionica je namijenjena i liderima i followerima, tako da učesnici ne moraju dolaziti u
-                            paru. Molimo vas da
-                            ponesete i čarape/meke plesne cipele, kao i vaše uobičajene cipele za milongu.
+                            Na ovoj radionici istražićemo ključne tehničke i muzičke razlike u načinu plesa na muziku
+                            ova dva legendarna tango
+                            orkestra. Jedan je poznat po svom ritmičkom karakteru, dok je drugi prepoznatljiv po
+                            predivnim melodijama. Kroz
+                            standardne tango figure pokazaćemo vam kako ih prilagoditi kako biste što bolje izrazili
+                            specifičnosti ovih orkestara.
                         </div>
                     </div>
                 </div>
                 <div class="row-container">
                     <div class="workshop-container">
-                        <div class="workshop-title">
-                            4. Kružnost u jednostavnim pokretima
+                        <div class="workshop-header">
+                            <div class="workshop-number">4.</div>
+                            <div class="workshop-name">Kružnost u jednostavnim pokretima
+                            </div>
+                            <div class="workshop-level"><i>Svi nivoi</i></div>
+                            <div class="workshop-action">
+                                <img alt="Buena Vista logo" src="./assets/chevron-down.svg">
+                            </div>
                         </div>
                         <div class="workshop-desc">
-                            Počećemo od glave i postepeno se spuštati do stopala, osvrćući se na česte izazove i načine
-                            kako ih riješiti u vezi sa
-                            ravnotežom, osom, držanjem i zagrljajem. Fokus će biti na pronalaženju balansa između
-                            unutrašnje udobnosti i spoljašnje
-                            elegancije. Zašto x jedno kada možete imati oboje!
-                            <br>
-                            Ova radionica je namijenjena i liderima i followerima, tako da učesnici ne moraju dolaziti u
-                            paru. Molimo vas da
-                            ponesete i čarape/meke plesne cipele, kao i vaše uobičajene cipele za milongu.
+                            Sviđa vam se način na koji plešemo, ali ne možete baš precizno objasniti zašto? Jedan od
+                            odgovora krije se u ovoj
+                            radionici. Pokazaćemo vam kako da ublažite oštre "ivice" svojih svakodnevnih tango figura, i
+                            učinite ih mekšim, tečnijim
+                            i zaokruženim.
                         </div>
                     </div>
                 </div>
                 <div class="row-container">
                     <div class="workshop-container">
-                        <div class="workshop-title">
-                            5. Milongero varijacije
+                        <div class="workshop-header">
+                            <div class="workshop-number">5.</div>
+                            <div class="workshop-name">Milongero varijacije
+                            </div>
+                            <div class="workshop-level"><i>Srednji i napredni nivo</i></div>
+                            <div class="workshop-action">
+                                <img alt="Buena Vista logo" src="./assets/chevron-down.svg">
+                            </div>
                         </div>
                         <div class="workshop-desc">
-                            Počećemo od glave i postepeno se spuštati do stopala, osvrćući se na česte izazove i načine
-                            kako ih riješiti u vezi sa
-                            ravnotežom, osom, držanjem i zagrljajem. Fokus će biti na pronalaženju balansa između
-                            unutrašnje udobnosti i spoljašnje
-                            elegancije. Zašto x jedno kada možete imati oboje!
-                            <br>
-                            Ova radionica je namijenjena i liderima i followerima, tako da učesnici ne moraju dolaziti u
-                            paru. Molimo vas da
-                            ponesete i čarape/meke plesne cipele, kao i vaše uobičajene cipele za milongu.
+                            Na ovoj radionici naučićete dvije zabavne kombinacije koraka u bliskom zagrljaju, savršene
+                            za interpretaciju ritmičnih
+                            i/ili energičnih djelova muzike (npr. varijacije). Obje kombinacije lako se prilagođavaju
+                            bilo kom prostoru, što ih čini
+                            idealnim za milonge sa velikom gužvom u rondi.
                         </div>
                     </div>
                 </div>
@@ -306,7 +298,8 @@
             <div class="scroll-to" id="djs"></div>
             <h2 class="sub-title">DJ-evi</h2>
             <div class="description">
-                Naše DJ-eve birali smo s posebnom pažnjom, kako bismo osigurali neprekidan tok neodoljivih melodija iz
+                Naše DJ-eve birali smo s posebnom pažnjom, kako bismo osigurali neprekidan tok neodoljivih melodija
+                iz
                 zlatnog doba
                 tanga koje će vas, a da to ni ne primijetite, konstantno vući ka plesnom podijumu.
             </div>
@@ -355,18 +348,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="column">
-                    <div class="back-image" style="background-image: url('./assets/bobi.webp');">
-                        <div class="image-overlay dj-overlay">
-                            <div class="overlay-text dj-overlay-text">
-                                DJ Boban Šćepanović
-                                <br>
-                                <i>(Montenegro)</i>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
 
@@ -438,13 +419,15 @@
                     <div class="dj">DJ Anđela Điki Ristić
                     </div>
                     <div class="dj">
-                        <i>Nastup: Maja Petrović<br>i Marko Miljević</i>
+                        <i>Nastup:<br>Maja Petrović i Marko Miljević</i>
                     </div>
                     <div>----------</div>
                     <br>
                     <!-- <div class="hours">00:00-03:00</div> -->
                     <div class="event-title" event-title">NE-TANGO AFTERPARTY</div>
                     <div class="dj">Caffe Club Haustor </div>
+                    <div class="dj"><i>Besplatan ulaz!</i></div>
+
                     <a class="location-link"
                         href="https://www.google.com/maps/place/Club+Haustor/@42.4395518,19.266024,20.93z/data=!4m6!3m5!1s0x134deb4f4f718743:0x72f41bdd22b6507e!8m2!3d42.4395054!4d19.2659261!16s%2Fg%2F11gd39t4l7?hl=en&entry=ttu">
                         vidi lokaciju
@@ -456,15 +439,15 @@
                 </div>
                 <div class="day">
                     <div class="day-title">Nedjelja</div>
-                    <div class="event-title">Workshop 4.</div>
+                    <div class="event-title">Radionica 4.</div>
                     <div class="event-description">Kružnost u jednostavnim pokretima</div>
-                    <div class="event-title">Workshop 5.</div>
+                    <div class="event-title">Radionica 5.</div>
                     <div class="event-description">Milongero varijacije
                     </div>
                     <div>----------</div>
                     <br>
                     <!-- <div class="hours">16:30-23:00</div> -->
-                    <div class="event-title">ALL-DAY MILONGA</div>
+                    <div class="event-title">CJELODNEVNA MILONGA</div>
                     <div class="dj">DJ Luka Radunović
                     </div>
                     <div>----------</div>
@@ -472,6 +455,7 @@
                     <!-- <div class="hours">00:00-03:00</div> -->
                     <div class="event-title" event-title">TANGO AFTERPARTY</div>
                     <div class="dj">Caffe Club Haustor </div>
+                    <div class="dj"><i>Besplatan ulaz!</i></div>
                     <a class="location-link"
                         href="https://www.google.com/maps/place/Club+Haustor/@42.4395518,19.266024,20.93z/data=!4m6!3m5!1s0x134deb4f4f718743:0x72f41bdd22b6507e!8m2!3d42.4395054!4d19.2659261!16s%2Fg%2F11gd39t4l7?hl=en&entry=ttu">
                         vidi lokaciju
@@ -509,68 +493,120 @@
             </div>
 
         </div> -->
-        <!-- <div class="section pricing">
+        <div class="section pricing">
             <div class="scroll-to" id="pricing"></div>
-            <h2 class="sub-title">Pricing
+            <h2 class="sub-title">Cijene
             </h2>
             <div class="pricing-container">
-                <div class="pricing-title">Full Price</div>
+                <div class="pricing-title">Super early bloom&#127804;
+                    <br>
+                    <i>(do 5. februara)</i>
+                </div>
+                <div class="pricing-row highligh-price">
+                    <div class="name">Milonguero pass</div>
+                    <div class="price-desc">Sve milonge</div>
+                    <div class="price">40€</div>
+                </div>
+                <div class="pricing-row highligh-price">
+                    <div class="name">Full pass</div>
+                    <div class="price-desc">Sve milonge + svih 5 radionica</div>
+                    <div class="price">90€</div>
+                </div>
+                <div class="pricing-title">Early bloom
+                    <br>
+                    <i>(6. februar - 6. mart)</i>
+                </div>
+                <div class="pricing-row semi-highligh-price">
+                    <div class="name">Milonguero pass</div>
+                    <div class="price-desc">Sve milonge</div>
+                    <div class="price">50€</div>
+                </div>
+                <div class="pricing-row semi-highligh-price">
+                    <div class="name">All Workshops pass</div>
+                    <div class="price-desc">Svih 5 radionica</div>
+                    <div class="price">70€</div>
+                </div>
+                <!-- <div class="pricing-row semi-highligh-price">
+                            <div class="name">
+                                <div class="centered-text">Tango<span style="font-family: 'Cormorant Garamond', serif;">
+                                        &</span> Chill pass</div>
+                            </div>
+                            <div class="price-desc">All milongas<br>+ 3 workshops</div>
+                            <div class="price">80€</div>
+                        </div> -->
+                <div class="pricing-row semi-highligh-price" style="margin-bottom: 50px;">
+                    <div class="name">
+                        <div class="centered-text">Full pass</div>
+                    </div>
+                    <div class="price-desc">Sve milonge<br>+ svih 5 radionica</div>
+                    <div class="price">100€</div>
+                </div>
+                <div class="pricing-title">Puna cijena
+                    <br>
+                    <i>(od 7. marta)</i>
+                </div>
                 <div class="pricing-row">
                     <div class="name">Milonguero pass</div>
-                    <div class="price-desc">All milongas</div>
-                    <div class="price">50€</div>
+                    <div class="price-desc">Sve milonge</div>
+                    <div class="price">60€</div>
+                </div>
+                <div class="pricing-row">
+                    <div class="name">All Workshops pass</div>
+                    <div class="price-desc">Svih 5 radionica</div>
+                    <div class="price">70€</div>
                 </div>
                 <div class="pricing-row" style="margin-bottom: 50px;">
                     <div class="name">
                         <div class="centered-text">Full pass</div>
                     </div>
-                    <div class="price-desc">All milongas<br>+ All workshops</div>
-                    <div class="price">100€</div>
+                    <div class="price-desc">Sve milonge<br>+ svih 5 radionica</div>
+                    <div class="price">120€</div>
                 </div>
                 <div class="pricing-row">
-                    <div class="name">Individual workshop</div>
-                    <div class="price-desc">One workshop</div>
-                    <div class="price">12.5€</div>
+                    <div class="name">Individualna radionica</div>
+                    <div class="price-desc">Jedna radionica</div>
+                    <div class="price">20€</div>
                 </div>
+                <div class="pricing-title">Na ulazu</div>
+
+
                 <div class="pricing-row">
-                    <div class="name">Friday milonga</div>
+                    <div class="name">Petak: večernja milonga </div>
                     <div class="price-desc">
                         <span>
-                            DJ Osky<br>Performance by Relja <span
-                                style="font-family: 'Cormorant Garamond', serif;">&</span> Djiki
+                            DJ Maja Petrović
                         </span>
                     </div>
                     <div class="price">20€</div>
                 </div>
                 <div class="pricing-row">
-                    <div class="name">Saturday daily milonga</div>
-                    <div class="price-desc">DJ Djiki</div>
+                    <div class="name">Subota: dnevna milonga </div>
+                    <div class="price-desc">DJ Tufik Šerifi</div>
                     <div class="price">10€</div>
                 </div>
                 <div class="pricing-row">
-                    <div class="name">Saturday milonga</div>
+                    <div class="name">Subota: večernja milonga</div>
                     <div class="price-desc">
                         <span>
-                            DJ Davor<br>Performance by Osky <span
-                                style="font-family: 'Cormorant Garamond', serif;">&</span> Magdalena
+                            DJ Điki<br>Nastup: Maja&nbsp;<span
+                                style="font-family: 'Cormorant Garamond', serif;">&</span>&nbsp;Marko
                         </span>
                     </div>
 
-                    <div class="price">20€</div>
+                    <div class="price">25€</div>
                 </div>
                 <div class="pricing-row">
-                    <div class="name">Sunday all-day milonga</div>
+                    <div class="name">Nedjelja: cjelodnevna milonga</div>
                     <div class="price-desc">
                         <span>
-                            DJ Luka<br>Performance by Emir <span
-                                style="font-family: 'Cormorant Garamond', serif;">&</span> Andrea
-                        </span>
+                            DJ Luka</span>
                     </div>
                     <div class="price">20€</div>
                 </div>
 
+
             </div>
-        </div> -->
+        </div>
         <div class="section register">
             <div class="scroll-to" id="register"></div>
             <br><br><br><br>
@@ -578,12 +614,12 @@
                 <br>
                 31. januara!
             </h2>
-            <!-- <div class="register-message">
-                
-            </div> -->
-            <!-- <iframe class="form-frame"
+            <div class="register-message">
+
+            </div>
+            <iframe class="form-frame"
                 src="https://docs.google.com/forms/d/e/1FAIpQLSdkYTfXxMOlhgIfFsUyRZ9l3Clo5xvDSvdjuw86u7efGrkF0w/viewform?embedded=true"
-                width="640" height="917" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+                width="640" height="917" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
         </div>
     </div>
     <script src="script.js" async defer></script>

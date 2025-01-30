@@ -30,3 +30,27 @@ if ("serviceWorker" in navigator) {
       .catch((err) => console.log("service worker not registered", err));
   });
 }
+
+document.querySelectorAll('.workshop-header').forEach((header) => {
+  header.addEventListener('click', () => {
+    const desc = header.nextElementSibling;
+
+    // Close any already-open descriptions
+    document.querySelectorAll('.workshop-desc.open').forEach((openDesc) => {
+      if (openDesc !== desc) {
+        openDesc.style.maxHeight = null;
+        openDesc.classList.remove('open');
+      }
+    });
+
+    // Toggle the current one
+    const isOpen = desc.classList.contains('open');
+    if (isOpen) {
+      desc.style.maxHeight = null;
+      desc.classList.remove('open');
+    } else {
+      desc.style.maxHeight = desc.scrollHeight + "px";
+      desc.classList.add('open');
+    }
+  });
+});
