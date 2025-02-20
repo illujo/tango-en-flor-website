@@ -354,6 +354,11 @@ body::-webkit-scrollbar-thumb {
   color: #616858;
 }
 
+.venue {
+  background-color: #c35d5d;
+  color: white !important;
+}
+
 .djs {
   background-color: #c5eaff;
   color: #093a5d;
@@ -394,8 +399,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .schedule {
-  background-color: #ffebd8;
-  color: #616858;
+  background-color: #7a8867;
+  color: #ffebd8;
 }
 
 .pricing {
@@ -410,7 +415,7 @@ body::-webkit-scrollbar-thumb {
 .register {
   padding-right: 10px;
   padding-left: 10px;
-  background-color: #657935;
+  background-color: #688048;
   color: white;
   background-image: url(./assets/cvijece-green.webp);
   background-position: bottom;
@@ -578,13 +583,13 @@ body::-webkit-scrollbar-thumb {
 .day-title {
   font-size: 34px;
   margin-bottom: 15px;
-  color: #6f5227;
+  color: #feffd8;
 }
 
 .hours {
   font-size: 38px;
   margin-bottom: 10px;
-  color: #5a8d18;
+  color: #fff9e3;
 }
 
 .dj {
@@ -596,7 +601,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 10px;
   font-size: 18px;
   font-decoration: underline !important;
-  color: #5a8d18;
+  color: #fff9e3;
 }
 
 .location-linkover:hover {
