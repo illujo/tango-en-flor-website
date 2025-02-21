@@ -341,6 +341,14 @@ body::-webkit-scrollbar-thumb {
   font-weight: 400;
 }
 
+h3.sub-title {
+  font-size: 32px;
+  margin-bottom: 60px;
+  margin-top: 0px;
+  text-align: center;
+  font-weight: 500;
+}
+
 .description {
   font-size: 22px;
   text-align: center;
@@ -847,4 +855,44 @@ body::-webkit-scrollbar-thumb {
   width: 50px;
   height: auto;
   opacity: 0.6;
+}
+
+.info-container {
+  width: 800px;
+  margin-bottom: 20px;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  font-size: 30px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+
+  background-color: #c5eaff;
+  box-shadow: 0px 5px 10px -5px #6168582d;
+  cursor: pointer;
+}
+
+.info-desc {
+  max-height: 0; /* Initially collapsed */
+  padding: 0px 20px 0px 20px;
+  font-size: 22px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background-color: #c5eaff;
+}
+
+.info-desc.open {
+  max-height: 500px; /* This is overridden dynamically by JavaScript */
+  padding-bottom: 20px;
+  padding-top: 20px;
+  transition: all 0.4s ease;
+  border-radius: 20px;
+}
+
+.info-name {
+  margin-left: 15px;
 }
