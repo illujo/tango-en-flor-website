@@ -179,7 +179,7 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1365px) {
   .header {
     justify-content: space-between;
   }
