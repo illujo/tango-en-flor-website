@@ -31,26 +31,50 @@ if ("serviceWorker" in navigator) {
   });
 }
 
-document.querySelectorAll('.workshop-header').forEach((header) => {
-  header.addEventListener('click', () => {
+document.querySelectorAll(".workshop-header").forEach((header) => {
+  header.addEventListener("click", () => {
     const desc = header.nextElementSibling;
 
     // Close any already-open descriptions
-    document.querySelectorAll('.workshop-desc.open').forEach((openDesc) => {
+    document.querySelectorAll(".workshop-desc.open").forEach((openDesc) => {
       if (openDesc !== desc) {
         openDesc.style.maxHeight = null;
-        openDesc.classList.remove('open');
+        openDesc.classList.remove("open");
       }
     });
 
     // Toggle the current one
-    const isOpen = desc.classList.contains('open');
+    const isOpen = desc.classList.contains("open");
     if (isOpen) {
       desc.style.maxHeight = null;
-      desc.classList.remove('open');
+      desc.classList.remove("open");
     } else {
       desc.style.maxHeight = desc.scrollHeight + "px";
-      desc.classList.add('open');
+      desc.classList.add("open");
+    }
+  });
+});
+
+document.querySelectorAll(".info-header").forEach((header) => {
+  header.addEventListener("click", () => {
+    const desc = header.nextElementSibling;
+
+    // Close any already-open descriptions
+    document.querySelectorAll(".info-desc.open").forEach((openDesc) => {
+      if (openDesc !== desc) {
+        openDesc.style.maxHeight = null;
+        openDesc.classList.remove("open");
+      }
+    });
+
+    // Toggle the current one
+    const isOpen = desc.classList.contains("open");
+    if (isOpen) {
+      desc.style.maxHeight = null;
+      desc.classList.remove("open");
+    } else {
+      desc.style.maxHeight = desc.scrollHeight + "px";
+      desc.classList.add("open");
     }
   });
 });
