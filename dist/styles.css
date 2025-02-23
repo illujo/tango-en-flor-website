@@ -384,6 +384,29 @@ h3.sub-title {
   background-repeat: repeat-x;
   background-size: auto 200px;
 }
+
+.couples-container {
+  display: flex;
+}
+
+.couples-container .separator {
+  display: none;
+}
+
+@media (max-width: 1364px) {
+  .couples-container {
+    flex-direction: column;
+  }
+  .couples-container .separator {
+    display: block;
+  }
+}
+
+.couples-container .description {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .workshops {
   background-color: #7a8867;
   color: white;
@@ -392,10 +415,6 @@ h3.sub-title {
   background-repeat: repeat-x;
   background-size: auto 200px;
 }
-/* 
-.couple .description {s
-  max-width: 800px;
-} */
 
 .foto {
   color: #ffebd8;
