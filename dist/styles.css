@@ -287,7 +287,7 @@ body::-webkit-scrollbar-thumb {
 .button {
   padding: 7px 25px 10px 25px;
   border-radius: 10px;
-  background-color: #8caf3c;
+  background-color: #c04d4d;
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -448,6 +448,7 @@ h3.sub-title {
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: auto 400px;
+  text-align: center;
 }
 
 .register-message {
